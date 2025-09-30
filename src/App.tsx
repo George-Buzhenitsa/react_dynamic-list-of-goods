@@ -11,6 +11,7 @@ export const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   const getAllGoods = () => {
+    setIsError(false);
     setLoading(true);
     getAll()
       .then(data => {
@@ -23,6 +24,7 @@ export const App: React.FC = () => {
   };
 
   const getFirtsFive = () => {
+    setIsError(false);
     setLoading(true);
     get5First()
       .then(data => {
@@ -35,6 +37,7 @@ export const App: React.FC = () => {
   };
 
   const getRedOne = () => {
+    setIsError(false);
     setLoading(true);
     getRedGoods()
       .then(data => {

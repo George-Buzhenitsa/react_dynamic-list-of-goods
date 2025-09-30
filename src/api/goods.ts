@@ -12,7 +12,7 @@ export async function getAll(): Promise<Good[]> {
 
     return response.json();
   } catch (error) {
-    throw new Error();
+    throw error;
   }
 }
 
